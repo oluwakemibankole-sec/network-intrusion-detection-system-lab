@@ -147,6 +147,8 @@ These issues were resolved through interface analysis and packet-level investiga
 
 ![Final Evidence](screenshots/09-final-detection-evidence.png)
 
+- [Commands TXT File](commands/commands-used.txt)
+
 ---
 
 # Author
