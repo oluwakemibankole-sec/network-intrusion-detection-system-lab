@@ -1,4 +1,4 @@
-# Commands Used in the NIDS Lab
+# Commands Used in the NIDS Lab.
 
 ## Check IP Address and Interfaces
 
