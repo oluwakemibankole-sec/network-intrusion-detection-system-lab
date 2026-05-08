@@ -156,6 +156,6 @@ These issues were resolved through interface analysis and packet-level investiga
 **Oluwakemi Bankole**  
 Cybersecurity Analyst | SOC Analyst | Penetration Testing Enthusiast
 
-- [Commands TXT File](commands/commands.txt)
+
 
 
