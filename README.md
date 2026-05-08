@@ -1,45 +1,117 @@
-# network-intrusion-detection-system-lab
-A SOC-style NIDS lab using Suricata, Wireshark, Kali Linux, Ubuntu, Metasploitable, and Nmap to detect reconnaissance and suspicious TCP traffic.
-# Network Intrusion Detection System Lab
+# Network Intrusion Detection System (NIDS) Lab
 
-## Project Overview
-This project demonstrates the design and implementation of a Network Intrusion Detection System lab for monitoring and detecting suspicious network activity.
+## Overview
 
-The lab simulates reconnaissance activity using Kali Linux and Nmap, captures traffic using Wireshark, and analyzes detection evidence using Suricata concepts.
+This project demonstrates the design and implementation of a Network Intrusion Detection System (NIDS) lab for monitoring and detecting suspicious network activity.
 
-## Objective
-- Build a controlled cybersecurity lab environment
-- Simulate suspicious network traffic
-- Capture and analyze packets
-- Identify reconnaissance-style TCP behavior
-- Present findings using SOC-style documentation
+The lab simulates reconnaissance traffic using Kali Linux and Nmap against a Metasploitable target while Ubuntu monitors traffic using Wireshark and Suricata.
 
-## Lab Architecture
+---
+
+# Lab Architecture
+
 | Machine | Role | Tools |
 |---|---|---|
 | Kali Linux | Attacker | Nmap |
-| Metasploitable | Target | Vulnerable services |
-| Ubuntu | NIDS Sensor | Wireshark, Suricata |
+| Metasploitable | Victim/Target | Vulnerable Services |
+| Ubuntu | Monitoring Sensor | Wireshark, Suricata |
 
-## Tools Used
+---
+
+# Tools Used
+
 - VirtualBox
 - Kali Linux
 - Ubuntu
 - Metasploitable
-- Nmap
 - Wireshark
+- Nmap
 - Suricata
 
-## Attack Simulation
-Nmap was used to simulate reconnaissance against the target machine.
+---
+
+# Attack Simulation
+
+Reconnaissance activity was simulated using Nmap:
 
 ```bash
 nmap -Pn -sT <target-ip>
 nmap --script vuln <target-ip>
+```
 
-## Project Documents
+---
+
+# Detection Evidence
+
+## Wireshark TCP SYN Analysis
+
+Wireshark analysis showing repeated TCP SYN packets followed by RST/ACK responses during simulated reconnaissance activity.
+
+This pattern is consistent with scanning behavior and unauthorized service discovery attempts.
+
+![TCP Analysis](screenshots/08-tcp-syn-rst-analysis.png)
+
+---
+
+# Final Detection Evidence
+
+The final analysis identified repeated TCP SYN packets and reset responses captured on the active monitoring interface.
+
+![Final Evidence](screenshots/09-final-detection-evidence.png)
+
+---
+
+# Live Traffic Capture
+
+Wireshark successfully captured live network traffic including TCP, DNS, ARP and ICMPv6 protocols.
+
+![Live Traffic](screenshots/07-live-traffic-capture.png)
+
+---
+
+# SOC Analyst Skills Demonstrated
+
+- Packet Analysis
+- Network Monitoring
+- Wireshark Traffic Analysis
+- TCP Flag Interpretation
+- Reconnaissance Detection
+- Linux Administration
+- IDS Monitoring
+- Troubleshooting
+- Technical Reporting
+
+---
+
+# Challenges Encountered
+
+- Incorrect interface selection initially showed limited traffic
+- Suricata alert inconsistency in virtualized environments
+- Network routing visibility issues in VirtualBox
+
+These issues were resolved through interface analysis and packet-level investigation.
+
+---
+
+# Future Improvements
+
+- Integrate Suricata logs with Splunk or ELK
+- Implement IPS functionality
+- Add brute-force attack simulations
+- Create custom Suricata detection rules
+
+---
+
+# Project Documents
 
 - [NIDS Defence Slides (PPTX)](docs/nids-project-defence-slides.pptx)
 - [NIDS Defence Slides (PDF)](docs/nids-project-defence-slides.pdf)
-- [NIDS Project Report](docs/nids-project-report.pdf)
+- [NIDS Project Report (PDF)](docs/nids-project-report.pdf)
+- [NIDS Project Report (DOCX)](docs/nids-project-report.docx)
 
+---
+
+# Author
+
+**Oluwakemi Bankole**  
+Cybersecurity Analyst | SOC Analyst | Penetration Testing Enthusiast
