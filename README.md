@@ -158,11 +158,4 @@ Cybersecurity Analyst | SOC Analyst | Penetration Testing Enthusiast
 
 - [Commands TXT File](commands/commands.txt)
 
-## Project Documents
 
-- [NIDS Defence Slides (PPTX)](docs/nids-project-defence-slides.pptx)
-- [NIDS Defence Slides (PDF)](docs/nids-project-defence-slides.pdf)
-- [NIDS Project Report (PDF)](docs/nids-project-report.pdf)
-- [NIDS Project Report (DOCX)](docs/nids-project-report.docx)
-- [Traffic Analysis Report](findings/traffic-analysis-report.md)
-- [Commands Used](commands/commands-used.txt)
