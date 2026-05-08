@@ -109,6 +109,42 @@ These issues were resolved through interface analysis and packet-level investiga
 - [NIDS Project Report (PDF)](docs/nids-project-report.pdf)
 - [NIDS Project Report (DOCX)](docs/nids-project-report.docx)
 
+# Screenshots
+
+## Lab Setup
+
+![Lab Setup](screenshots/01-lab-setup.png)
+
+---
+
+## Suricata Fast Log
+
+![Suricata](screenshots/04-suricata-fastlog.png)
+
+---
+
+## Wireshark Interface Selection
+
+![Wireshark Interface](screenshots/05-wireshark-interface-selection.png)
+
+---
+
+## Live Traffic Capture
+
+![Live Traffic](screenshots/07-live-traffic-capture.png)
+
+---
+
+## TCP SYN and RST Analysis
+
+![TCP Analysis](screenshots/08-tcp-syn-rst-analysis.png)
+
+---
+
+## Final Detection Evidence
+
+![Final Evidence](screenshots/09-final-detection-evidence.png)
+
 ---
 
 # Author
