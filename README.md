@@ -109,6 +109,8 @@ These issues were resolved through interface analysis and packet-level investiga
 - [NIDS Project Report (PDF)](docs/nids-project-report.pdf)
 - [NIDS Project Report (DOCX)](docs/nids-project-report.docx)
 - [Traffic Analysis Report](findings/traffic-analysis-report.md)
+- [Commands Used](commands/commands-used.md)
+
 # Screenshots
 
 ## Lab Setup
